@@ -72,7 +72,8 @@
     "compile": "tsc",
     "test:module": "find test/module -name package.json -execdir npm test \\;",
     "test": "npm run compile && npm run test:module && jest",
-    "prepublishOnly": "npm run compile"
+    "prepublishOnly": "npm run compile",
+    "format": "prettier . --ignore-unknown --write"
   },
   "readme": "",
   "readmeFilename": "README.md"
